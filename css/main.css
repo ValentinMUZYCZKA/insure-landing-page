@@ -62,7 +62,11 @@ a {
   padding-right: 10.4em;
 }
 
-.menuNav__img {
+.menuNav__burger {
+  display: none;
+}
+
+.menuNav__image {
   width: 114px;
   height: auto;
 }
@@ -353,5 +357,183 @@ a {
 
 .title-deco__darker {
   background-color: #95a9c6;
+}
+
+@media screen and (min-width: 376px) and (max-width: 1340px) {
+  .section1__image {
+    right: 0;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    text-align: center;
+  }
+  .menuNav {
+    z-index: 12;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+  }
+  .menuNav__burger {
+    display: block;
+    right: 1.8em;
+    position: absolute;
+  }
+  .menuNav__link {
+    color: white;
+    font-size: 1.1em;
+  }
+  .menuNav__linksUl {
+    z-index: 10;
+    position: absolute;
+    background-color: #2b272f;
+    width: 100vw;
+    height: calc( 100vh - 78px);
+    top: 78px;
+    left: 0;
+    display: block;
+    padding-top: 3.2em;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  .menuNav__linksUl > li {
+    margin-bottom: 2.9em;
+    -webkit-transform: translateX(-400px);
+            transform: translateX(-400px);
+    opacity: 0;
+  }
+  .menuNav__linksUl > li:nth-child(3) {
+    padding-bottom: 0.5em;
+  }
+  .btn--dark {
+    background-color: #2b272f;
+    border: solid white 1.5px;
+    padding-top: 0.88em;
+    padding-bottom: 0.88em;
+  }
+  .btn--dark > a {
+    color: white;
+  }
+  .background--left {
+    background: no-repeat url("../asset/images/bg-pattern-intro-left-mobile.svg");
+    top: 28.05em;
+  }
+  .background--right {
+    display: none;
+  }
+  .section1 {
+    padding: 0;
+    padding-bottom: 8em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .section1__group {
+    max-width: 100%;
+    margin: 1em;
+  }
+  .section1__title {
+    font-size: 2.97em;
+    line-height: 1.05em;
+  }
+  .section1__text {
+    letter-spacing: 1.5px;
+    margin-top: 1.25em;
+    line-height: 1.85em;
+    font-size: 0.9em;
+  }
+  .section1__image {
+    position: static;
+    max-width: 100%;
+    right: 0;
+  }
+  .section2 {
+    padding: 1.5em;
+    padding-top: 8.75em;
+    padding-bottom: 0;
+  }
+  .section2__title {
+    font-size: 2.9em;
+    margin-bottom: 1.76em;
+  }
+  .title-deco {
+    display: none;
+  }
+  .title-deco__darker {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+  }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 0em;
+  }
+  .card {
+    margin-bottom: 3.7em;
+    width: 100%;
+  }
+  .banner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 5.2em;
+    margin: auto;
+    width: 260px;
+    height: 242px;
+    padding: 2em;
+    padding-top: 4.35em;
+    background: no-repeat url("../asset/images/bg-pattern-how-we-work-mobile.svg");
+    background-color: #2d2640;
+    background-position: right top;
+  }
+  .banner__text {
+    font-size: 2.5em;
+    width: 98%;
+  }
+  .banner__link {
+    margin-top: 2.9em;
+  }
+  .footer {
+    margin-top: 8.4em;
+  }
+  .footer__row1 {
+    padding-top: 1.5em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__logos {
+    margin-top: 2em;
+  }
+  .footer__row2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .submenuFooter {
+    margin-top: 1.5em;
+    padding-bottom: 0em;
+  }
+  .hr {
+    margin-top: 2.5em;
+    margin-bottom: 0.5em;
+    background-color: #95a9c6;
+  }
+  .attribution {
+    margin-top: 5em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

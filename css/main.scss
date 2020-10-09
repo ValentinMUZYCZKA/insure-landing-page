@@ -42,7 +42,6 @@ a{
     font-family: 'Roboto';
     text-transform: uppercase;
     font-weight: bold;
-    
     z-index: 3;
     height: 78px;
     width: auto;
@@ -52,7 +51,10 @@ a{
     padding-left: 10.5em;
     padding-right: 10.4em;
 
-    &__img{
+    &__burger{
+        display: none;
+    }
+    &__image{
         width: 114px;
         height: auto;
     }
@@ -292,6 +294,179 @@ a{
         background-color: $GrayishBlue;
     }
 }
+@media screen and (min-width: 376px ) AND (max-width: 1340px) {
+    .section1__image{
+        right: 0;
+        width: 50%;
+    }
+  }
 @media screen and (max-width: 375px) {
-    
+    body{
+        text-align: center;
+    }
+    .menuNav{
+        z-index: 12;
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+
+        &__burger{
+            display: block;
+            right: 1.8em;
+            position: absolute;
+        }
+
+        &__link{
+            color: $textSecondary;
+            font-size: 1.1em;
+            
+
+        }
+        &__linksUl{
+            z-index: 10;
+            position: absolute;
+            background-color: $DarkerViolet;
+            width: 100vw;
+            height: calc( 100vh - 78px );
+            top: 78px;
+            left: 0;
+            display: block;
+            padding-top: 3.2em;
+            transform: scaleY(0) ;
+            &>li{
+                margin-bottom: 2.9em;
+                transform: translateX(-400px) ;
+                opacity: 0;
+            }
+            &>li:nth-child(3){
+                padding-bottom: 0.5em;
+            }
+        
+        }
+        
+    }
+    .btn{
+        &--dark{
+            background-color: $DarkerViolet;
+            border: solid $textSecondary 1.5px;
+            padding-top: 0.88em;
+            padding-bottom: 0.88em;
+
+            &>a{
+                color: $textSecondary;
+            }
+        }
+    }
+    .background{
+
+        &--left{
+            background: no-repeat url("../asset/images/bg-pattern-intro-left-mobile.svg");
+            top: 28.05em;
+        }
+        &--right{
+            display: none;
+        }
+    }
+    .section1{
+        padding: 0;
+        padding-bottom: 8em;
+        flex-direction: column-reverse;
+
+        &__group{
+             max-width: 100%;
+             margin: 1em;
+        }
+        &__title{
+            font-size: 2.97em;
+            line-height: 1.05em;
+        }
+        &__text{
+            letter-spacing: 1.5px;
+            margin-top: 1.25em;
+            line-height: 1.85em;
+            font-size: 0.9em;
+        }
+        &__image{
+            position: static;
+            max-width: 100%;
+            right: 0;
+        }
+    }
+    .section2{
+        
+        padding: 1.5em;
+        padding-top: 8.75em;
+        padding-bottom: 0;
+        &__title{
+            font-size: 2.9em;
+            margin-bottom: 1.76em;
+        }
+    }
+    .title-deco{
+        display: none;
+
+        &__darker{
+            display: flex;
+            margin: auto;
+            margin-top: 0;
+        }
+    }
+    .cards{
+        flex-direction: column;
+        margin-top: 0em;
+    }
+    .card{
+        margin-bottom: 3.7em;
+        width: 100%;
+        &__text{
+            
+        }
+
+        &__image{
+        }
+    }
+    .banner{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 5.2em;
+        margin: auto;
+        width: 260px;
+        height:242px;
+        padding: 2em;
+        padding-top: 4.35em;
+        background: no-repeat url('../asset/images/bg-pattern-how-we-work-mobile.svg');
+        background-color: #2d2640;
+        background-position: right top;
+        &__text{
+            font-size: 2.5em;
+            width: 98%;
+        }
+        &__link{
+            margin-top: 2.9em;
+        }
+    }
+    .footer{
+        margin-top: 8.4em;
+        &__row1{
+            padding-top: 1.5em;
+            flex-direction: column;
+        }
+        &__logos{
+            margin-top: 2em;
+        }
+        &__row2{
+            flex-direction: column;
+        }
+    }
+    .submenuFooter{
+        margin-top: 1.5em;
+        padding-bottom: 0em;
+    }
+    .hr{
+        margin-top: 2.5em;
+        margin-bottom: 0.5em;
+        background-color: $GrayishBlue;
+    }
+    .attribution{
+        margin-top: 5em;
+    }
   }
