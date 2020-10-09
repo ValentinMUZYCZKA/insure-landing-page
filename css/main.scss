@@ -1,0 +1,187 @@
+@import 'colors';
+
+body{
+    font-size: 16px;
+    max-width: 1440px;
+    font-family: 'DM Serif Display';
+    overflow-x: hidden;
+}
+a{
+    color: $textPrimary;
+    text-decoration: none;
+}
+.background{  
+    z-index: 2;
+    position: absolute;
+    &--left{
+        width: 500px;
+        height: 500px;
+        background-image: url( "../asset/images/bg-pattern-intro-left-desktop.svg");
+        top: 6.4em;
+        left: 0;
+    }
+    &--right{
+        
+        width: 500px;
+        height: 500px;
+        background-image: url("../asset/images/bg-pattern-intro-right-desktop.svg");
+        top: 6.3em;
+        right: 0;
+
+    }
+}
+.menuNav{
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    &__img{
+        width: 100px;
+        height: auto;
+    }
+    &__links{
+        width: 400px;
+    }
+    &__linksUl{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__link{
+
+    }
+}
+.section1{
+    background-color: $DarkViolet;
+    color: $LighterGray;
+    display: flex;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    &__group{
+        width: 50%;
+    }
+    &__title{
+        font-size: 5em;
+    }
+    &__text{
+        
+    }
+    &__link{
+        color: $textSecondary;
+    }
+    &__image{
+        position: relative;
+        width: 60%;
+        top: 5em;
+    }
+}
+.section2{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    &__title{
+        font-size: 5em;
+    }
+}
+.cards{
+    display: flex;
+}
+.card{
+
+
+    &__image{
+        width: 80px;
+    }
+    &__title{
+        font-size: 2em;
+    }
+    &__text{
+        color: $GrayishBlue;
+    }
+}
+.banner{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    background-color: $DarkViolet;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 5em;
+    &__text{
+        width: 400px;
+        color: $LighterGray;
+        font-size: 2em;
+    }
+    &__link{
+        color: $LighterGray;
+    }
+}
+.footer{
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    &__row1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logos{
+        display: flex;
+    }
+    &__logo{
+
+    }
+    &__row2{
+        display: flex;
+        justify-content: space-between;
+        border-top: $GrayishBlue;
+    }
+
+    
+}
+.submenuFooter{
+     
+    &__link{
+
+    }
+    &__link--fade{
+        color: $GrayishBlue;
+        margin-bottom: 5em;
+    }
+}
+
+.btn{
+    z-index: 20;
+    border: solid $LighterGray 1px;
+    padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    transition: all 0.4s;
+
+    &:hover{
+        background-color: $LighterGray;
+        color: $DarkViolet;
+    }
+    &--dark{
+            border: solid $DarkerViolet 1px;
+            background-color: $LighterGray;
+
+        &:hover{
+            background-color: $DarkerViolet;
+            color: $LighterGray ;
+        }
+    }
+
+}
+
+
+.title-deco{
+    background-color: $DarkGrayishViolet;
+    width: 180px;
+    height: 2px;
+}
+@media screen and (max-width: 375px) {
+    
+  }
