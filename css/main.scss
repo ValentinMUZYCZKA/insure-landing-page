@@ -44,22 +44,31 @@ a{
     font-weight: bold;
     z-index: 3;
     height: 78px;
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10.5em;
-    padding-right: 10.4em;
+    width: 100vw;
+    position: fixed;
+    background-color: $textSecondary;
 
+    &__container{
+        max-width: 1440px;
+        height: 100%;
+        margin: auto;
+        
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__burger{
         display: none;
     }
     &__image{
+        padding-left: 10.5em;
         width: 114px;
         height: auto;
     }
     &__links{
-        width: 450px;
+        padding-right: 10.4em;
+        width: 446px;
     }
     &__linksUl{
         display: flex;
@@ -68,10 +77,13 @@ a{
     }
     &__link{
         color: $GrayishBlue;
-        letter-spacing: 1px;
-        font-size: 0.9em;
+        letter-spacing: 2px;
+        font-size: 0.75em;
         transition: all 0.4s;
 
+        &--account{
+            margin-right: 0.4em;
+        }
         &:hover{
             color: $textPrimary;
         }
@@ -85,7 +97,7 @@ a{
     padding-left: 10.1vw;
     padding-right: 10.1vw;
     min-height: 600px;
-    
+    top: 78px;
     &__group{
         max-width: 45%;
     }
@@ -259,7 +271,7 @@ a{
     font-family: 'Roboto';
     z-index: 20;
     border: solid $LighterGray 1.5px;
-    padding: 1.6em;
+    padding: 2.2em;
     padding-top: 0.825em;
     padding-bottom: 0.825em;
     transition: all 0.4s;
@@ -270,8 +282,8 @@ a{
         color: $DarkViolet;
     }
     &--dark{
-        padding-top: 0.4em;
-        padding-bottom: 0.4em;
+        padding-top: 0.94em;
+        padding-bottom: 0.94em;
         border: solid $DarkViolet 1.5px;
         background-color: $textSecondary;
         color: $textPrimary;
@@ -306,12 +318,20 @@ a{
     }
     .menuNav{
         z-index: 12;
-        padding-left: 1.8em;
+        padding-left: 1.6em;
         padding-right: 1.8em;
+        width: 100vw;
+        height: 80px;
+        &__container{
+            padding: 0;
+        }
 
+        &__image{
+            padding-left: 0;
+        }
         &__burger{
             display: block;
-            right: 1.8em;
+            right: 4.85em;
             position: absolute;
         }
 
@@ -368,7 +388,7 @@ a{
     }
     .section1{
         padding: 0;
-        padding-bottom: 8em;
+        padding-bottom: 8.3em;
         flex-direction: column-reverse;
 
         &__group{
@@ -376,25 +396,30 @@ a{
              margin: 1em;
         }
         &__title{
+            margin-top: 1.65em;
             font-size: 2.97em;
             line-height: 1.05em;
         }
         &__text{
             letter-spacing: 1.5px;
-            margin-top: 1.25em;
+            margin-top: 1.06em;
             line-height: 1.85em;
             font-size: 0.9em;
         }
         &__image{
-            position: static;
+            top: 2px;
+            position: relative;
             max-width: 100%;
             right: 0;
+        }
+        &__link{
+           top: 3.32em;
         }
     }
     .section2{
         
         padding: 1.5em;
-        padding-top: 8.75em;
+        padding-top: 13.65em;
         padding-bottom: 0;
         &__title{
             font-size: 2.9em;
@@ -413,21 +438,27 @@ a{
     .cards{
         flex-direction: column;
         margin-top: 0em;
+        margin-bottom: 5.2em;
     }
     .card{
-        margin-bottom: 3.7em;
+        margin-bottom: 3.544em;
         width: 100%;
         &__text{
-            
+            line-height: 1.92em;
         }
 
         &__image{
+        }
+
+        &__title{
+            line-height: 1.3em;
+            margin-top: 1.3em;
+            margin-bottom: 0.7em;
         }
     }
     .banner{
         flex-direction: column;
         justify-content: flex-start;
-        margin-top: 5.2em;
         margin: auto;
         width: 260px;
         height:242px;
