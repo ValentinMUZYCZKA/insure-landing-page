@@ -9,23 +9,23 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <script src="bower_components/gsap/dist/gsap.js"></script>
+  <script src="bower_components/gsap/dist/gsap.min.js"></script>
   <script src="js/main.js" defer></script>
   <title>Frontend Mentor | Insure landing page</title>
 
 </head>
 <body>
 
-    <nav class="menuNav">
-      <div class="menuNav__container">
-        <img class="menuNav__image" src="asset/images/logo.svg" alt="Logo of the enterprise 'INSURE'"> 
-        <img class="menuNav__burger" src="asset/images/icon-hamburger.svg"  alt="">     
-        <div class="menuNav__links">
-          <ul class="menuNav__linksUl">
-            <li ><a href="#" class="menuNav__link">How we work</a></li>
-            <li ><a href="#" class="menuNav__link">Blog</a></li>
-            <li ><a href="#" class="menuNav__link menuNav__link--account">Account</a></li>
-            <li ><a href="#" class="menuNav__link btn btn--dark">View plans</a></li>
+    <nav class="menu-nav">
+      <div class="menu-nav__container">
+        <img class="menu-nav__image" src="asset/images/logo.svg" alt="Logo of the enterprise 'INSURE'"> 
+        <img class="menu-nav__burger" src="asset/images/icon-hamburger.svg"  alt="">     
+        <div class="menu-nav__links">
+          <ul class="menu-nav__links-ul">
+            <li ><a href="#" class="menu-nav__link">How we work</a></li>
+            <li ><a href="#" class="menu-nav__link">Blog</a></li>
+            <li ><a href="#" class="menu-nav__link menu-nav__link--account">Account</a></li>
+            <li ><a href="#" class="menu-nav__link btn btn--dark">View plans</a></li>
           </ul>
         </div>
       </div>
@@ -81,7 +81,7 @@
       </div>
     </section>
     <section class="banner">
-      <p class="banner__text">Find out more about how we work</p>
+      <h2 class="banner__text">Find out more about how we work</h2>
       <a class="banner__link btn" href="#">How we work</a>
     </section>
   </main>
@@ -100,38 +100,37 @@
       <div class="hr"></div>
       <ul class="footer__row2">
         <li>
-          <ul class="submenuFooter">
-            <li class="margin-footer"><a href="#" class="submenuFooter__link submenuFooter__link--fade">Our company</a></li>
-            <li><a href="#" class="submenuFooter__link">How we work</a></li>
-            <li><a href="#" class="submenuFooter__link">Why insure?</a></li>
-            <li><a href="#" class="submenuFooter__link">View plans</a></li>
-            <li><a href="#" class="submenuFooter__link">Reviews</a></li>
+          <ul class="submenu-footer">
+            <li class="margin-footer"><a href="#" class="submenu-footer__link submenu-footer__link--fade">Our company</a></li>
+            <li><a href="#" class="submenu-footer__link">How we work</a></li>
+            <li><a href="#" class="submenu-footer__link">Why insure?</a></li>
+            <li><a href="#" class="submenu-footer__link">View plans</a></li>
+            <li><a href="#" class="submenu-footer__link">Reviews</a></li>
           </ul>
         </li>
         <li>
-          <ul class="submenuFooter"> 
-            <li class="margin-footer"><a href="#" class="submenuFooter__link submenuFooter__link--fade">Help me</a></li>
-            <li><a href="#" class="submenuFooter__link">FAQ</a></li>
-            <li><a href="#" class="submenuFooter__link">Terms of use</a></li>
-            <li><a href="#" class="submenuFooter__link">Privacy policy</a></li>
-            <li><a href="#" class="submenuFooter__link">Cookies</a></li>
+          <ul class="submenu-footer"> 
+            <li class="margin-footer"><a href="#" class="submenu-footer__link submenu-footer__link--fade">Help me</a></li>
+            <li><a href="#" class="submenu-footer__link">FAQ</a></li>
+            <li><a href="#" class="submenu-footer__link">Terms of use</a></li>
+            <li><a href="#" class="submenu-footer__link">Privacy policy</a></li>
+            <li><a href="#" class="submenu-footer__link">Cookies</a></li>
           </ul>
         </li>
         <li>
-          <ul class="submenuFooter">
-            <li class="margin-footer"><a href="#" class="submenuFooter__link submenuFooter__link--fade">Contact</a></li>
-            <li><a href="#" class="submenuFooter__link">Sales</a></li>
-            <li><a href="#" class="submenuFooter__link">Support</a></li>
-            <li><a href="#" class="submenuFooter__link">Live chat</a></li>
+          <ul class="submenu-footer">
+            <li class="margin-footer"><a href="#" class="submenu-footer__link submenu-footer__link--fade">Contact</a></li>
+            <li><a href="#" class="submenu-footer__link">Sales</a></li>
+            <li><a href="#" class="submenu-footer__link">Support</a></li>
+            <li><a href="#" class="submenu-footer__link">Live chat</a></li>
           </ul>
         </li>
         <li>
-          <ul class="submenuFooter">
-            <li class="margin-footer"><a href="#" class="submenuFooter__link submenuFooter__link--fade">Others</a></li>
-            <li><a href="#" class="submenuFooter__link">Careers</a></li>
-            <li><a href="#" class="submenuFooter__link">Press</a></li>
-            <li><a href="#" class="submenuFooter__link">Licenses</a></li>
-            <li><a href="#" class="submenuFooter__link"></a></li>
+          <ul class="submenu-footer">
+            <li class="margin-footer"><a href="#" class="submenu-footer__link submenu-footer__link--fade">Others</a></li>
+            <li><a href="#" class="submenu-footer__link">Careers</a></li>
+            <li><a href="#" class="submenu-footer__link">Press</a></li>
+            <li><a href="#" class="submenu-footer__link">Licenses</a></li>
           </ul>
         </li>
         <li></li>

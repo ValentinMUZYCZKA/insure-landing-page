@@ -4,6 +4,8 @@ html{
     font-size: 16px;
     color: $DarkerViolet;
     font-weight: 400;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 body{
     font-family: 'DM Serif Display', sans-serif;
@@ -11,7 +13,7 @@ body{
 .container{
     margin: auto;
     max-width: 1440px;
-    overflow-x: hidden;
+
 }
 a{
     color: $textPrimary;
@@ -38,7 +40,7 @@ a{
 
     }
 }
-.menuNav{
+.menu-nav{
     font-family: 'Roboto';
     text-transform: uppercase;
     font-weight: bold;
@@ -70,7 +72,7 @@ a{
         padding-right: 10.4em;
         width: 446px;
     }
-    &__linksUl{
+    &__links-ul{
         display: flex;
         justify-content: space-between;
         
@@ -240,7 +242,7 @@ a{
     height: 1px;
     background-color: $DarkGrayishViolet;
 }
-.submenuFooter{
+.submenu-footer{
     text-transform: uppercase;
     font-family: "Roboto";
     font-weight: 700;
@@ -316,7 +318,7 @@ a{
     body{
         text-align: center;
     }
-    .menuNav{
+    .menu-nav{
         z-index: 12;
         padding-left: 1.6em;
         padding-right: 1.8em;
@@ -341,7 +343,7 @@ a{
             
 
         }
-        &__linksUl{
+        &__links-ul{
             z-index: 10;
             position: absolute;
             background-color: $DarkerViolet;
@@ -446,10 +448,6 @@ a{
         &__text{
             line-height: 1.92em;
         }
-
-        &__image{
-        }
-
         &__title{
             line-height: 1.3em;
             margin-top: 1.3em;
@@ -488,7 +486,7 @@ a{
             flex-direction: column;
         }
     }
-    .submenuFooter{
+    .submenu-footer{
         margin-top: 1.5em;
         padding-bottom: 0em;
     }

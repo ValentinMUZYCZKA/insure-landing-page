@@ -3,6 +3,8 @@ html {
   font-size: 16px;
   color: #2b272f;
   font-weight: 400;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,7 +14,6 @@ body {
 .container {
   margin: auto;
   max-width: 1440px;
-  overflow-x: hidden;
 }
 
 a {
@@ -40,7 +41,7 @@ a {
   right: 0;
 }
 
-.menuNav {
+.menu-nav {
   font-family: "Roboto";
   text-transform: uppercase;
   font-weight: bold;
@@ -50,7 +51,7 @@ a {
   position: fixed;
   background-color: white;
 }
-.menuNav__container {
+.menu-nav__container {
   max-width: 1440px;
   height: 100%;
   margin: auto;
@@ -58,32 +59,32 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.menuNav__burger {
+.menu-nav__burger {
   display: none;
 }
-.menuNav__image {
+.menu-nav__image {
   padding-left: 10.5em;
   width: 114px;
   height: auto;
 }
-.menuNav__links {
+.menu-nav__links {
   padding-right: 10.4em;
   width: 446px;
 }
-.menuNav__linksUl {
+.menu-nav__links-ul {
   display: flex;
   justify-content: space-between;
 }
-.menuNav__link {
+.menu-nav__link {
   color: #95a9c6;
   letter-spacing: 2px;
   font-size: 0.75em;
   transition: all 0.4s;
 }
-.menuNav__link--account {
+.menu-nav__link--account {
   margin-right: 0.4em;
 }
-.menuNav__link:hover {
+.menu-nav__link:hover {
   color: black;
 }
 
@@ -236,7 +237,7 @@ a {
   background-color: #837d87;
 }
 
-.submenuFooter {
+.submenu-footer {
   text-transform: uppercase;
   font-family: "Roboto";
   font-weight: 700;
@@ -244,14 +245,14 @@ a {
   margin-top: 2.54em;
   padding-bottom: 3.5em;
 }
-.submenuFooter__link {
+.submenu-footer__link {
   font-size: 0.73em;
   line-height: 2.7em;
 }
-.submenuFooter__link:hover {
+.submenu-footer__link:hover {
   text-decoration: underline;
 }
-.submenuFooter__link--fade {
+.submenu-footer__link--fade {
   color: #95a9c6;
 }
 
@@ -310,29 +311,29 @@ a {
     text-align: center;
   }
 
-  .menuNav {
+  .menu-nav {
     z-index: 12;
     padding-left: 1.6em;
     padding-right: 1.8em;
     width: 100vw;
     height: 80px;
   }
-  .menuNav__container {
+  .menu-nav__container {
     padding: 0;
   }
-  .menuNav__image {
+  .menu-nav__image {
     padding-left: 0;
   }
-  .menuNav__burger {
+  .menu-nav__burger {
     display: block;
     right: 4.85em;
     position: absolute;
   }
-  .menuNav__link {
+  .menu-nav__link {
     color: white;
     font-size: 1.1em;
   }
-  .menuNav__linksUl {
+  .menu-nav__links-ul {
     z-index: 10;
     position: absolute;
     background-color: #2b272f;
@@ -344,12 +345,12 @@ a {
     padding-top: 3.2em;
     transform: scaleY(0);
   }
-  .menuNav__linksUl > li {
+  .menu-nav__links-ul > li {
     margin-bottom: 2.9em;
     transform: translateX(-400px);
     opacity: 0;
   }
-  .menuNav__linksUl > li:nth-child(3) {
+  .menu-nav__links-ul > li:nth-child(3) {
     padding-bottom: 0.5em;
   }
 
@@ -473,7 +474,7 @@ a {
     flex-direction: column;
   }
 
-  .submenuFooter {
+  .submenu-footer {
     margin-top: 1.5em;
     padding-bottom: 0em;
   }
